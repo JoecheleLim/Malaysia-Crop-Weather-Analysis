@@ -36,4 +36,4 @@ pip install pandas scikit-learn matplotlib seaborn fastparquet
 * Then, run `Crop_Prediction_Model.ipynb` to train the models and view the results.
 
 ## License
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the `LICENSE` file for details.
