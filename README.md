@@ -26,7 +26,8 @@ The project is divided into two main stages: a dedicated data preprocessing pipe
    git clone [https://github.com/JoecheleLim/Malaysia-Crop-Weather-Analysis.git](https://github.com/JoecheleLim/Malaysia-Crop-Weather-Analysis.git)
    ```
 2. **Install Dependencies:**
-Run the following command to install the necessary Python packages:
+
+   Run the following command to install the necessary Python packages:
 ```bash
 pip install pandas scikit-learn matplotlib seaborn fastparquet
 ```
