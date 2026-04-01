@@ -1,33 +1,38 @@
-# Malaysia Crop Production & Weather Analysis
+# Predicting Crop Production in Malaysia (WIA1006)
 
-## Overview
-This repository contains an exploratory data analysis (EDA) and data preprocessing pipeline for studying agricultural yields in Malaysia. The project integrates district-level crop production data with historical weather metrics to understand how environmental conditions affect different crop species.
+## Project Overview
+This repository contains a Machine Learning project focused on predicting agricultural production yields in Malaysia. The goal is to determine how environmental factors—such as temperature, humidity, and wind speed—influence the harvest of different crop types across various districts.
 
-## Dataset Information
-- **Crop Production Data:** Sourced from `data.gov.my`, containing historical records of cassava, groundnuts, sweet corn, banana, and other crops across various Malaysian states and districts.
-- **Weather Data:** Sourced from Kaggle, including hourly observations of temperature, humidity, and wind speed in Malaysia.
+The project is divided into two main stages: a dedicated data preprocessing pipeline and a model training and evaluation phase.
 
-## Features
-- **Data Cleansing:** Handles missing values, removes duplicates, and filters out zero-production outliers.
-- **Feature Engineering:** Aggregates hourly weather data into seasonal averages (temperature, max humidity, and average wind speed) corresponding to harvest cycles.
-- **Data Integration:** Merges disparate datasets using temporal (Year) and spatial (District/Place) keys.
-- **Visualisation:** Includes distribution histograms for key features like production and temperature.
+## Repository Structure
+* **`Crop_Data_Preprocessing.ipynb`**: Handles the initial data cleaning, merging of agricultural and weather datasets, normalisation of features, and preparation of the final dataset.
+* **`Crop_Prediction_Model.ipynb`**: Focuses on building, training, and comparing Machine Learning models (such as Linear Regression and Random Forest) and evaluating their predictive performance.
 
-## Dependencies
-The following Python libraries are required:
-- `pandas`
-- `matplotlib`
-- `seaborn`
-- `numpy`
-- `scikit-learn`
-- `fastparquet`
+## Key Features
+* **Data Integration:** Merging public sector agricultural data with historical climate records.
+* **Data Preprocessing:** Cleaning missing values, handling categorical encoding for crop types, and feature scaling.
+* **Model Comparison:** Implementation of different regression algorithms to find the most accurate predictor.
+* **Performance Metrics:** Evaluation using R-squared ($R^2$), Mean Absolute Error (MAE), and Root Mean Squared Error (RMSE).
 
-## How to Run
-1. Open the `.ipynb` notebook in Google Colab or a local Jupyter environment.
-2. Ensure you have access to the `full_weather.csv` file.
-3. Run the "Package Installation & setup" cell to install the necessary libraries.
-4. Execute the cells sequentially to perform data cleaning, merging, and visualisation.
+## Technologies Used
+* **Language:** Python
+* **Libraries:** `Pandas`, `NumPy`, `Scikit-learn`, `Matplotlib`, `Seaborn`, `Fastparquet`
+* **Environment:** Google Colab / Jupyter Notebook
 
-## Future Work
-- Implementation of regression models (Linear Regression, Random Forest) to predict production yields based on weather features.
-- Analysis of specific state-level agricultural trends.
+## Setup & Usage
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/JoecheleLim/Malaysia-Crop-Weather-Analysis.git](https://github.com/JoecheleLim/Malaysia-Crop-Weather-Analysis.git)
+   ```
+2. **Install Dependencies:**
+Run the following command to install the necessary Python packages:
+```bash
+pip install pandas scikit-learn matplotlib seaborn fastparquet
+```
+3. **Execution Order:**
+* First, run `Crop_Data_Preprocessing.ipynb` to prepare the data.
+* Then, run `Crop_Prediction_Model.ipynb` to train the models and view the results.
+
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
