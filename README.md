@@ -1,4 +1,4 @@
-# Predicting Crop Production in Malaysia (WIA1006)
+# Predicting Crop Production in Malaysia
 
 ## Project Overview
 This repository contains a Machine Learning project focused on predicting agricultural production yields in Malaysia. The goal is to determine how environmental factors—such as temperature, humidity, and wind speed—influence the harvest of different crop types across various districts.
@@ -35,5 +35,16 @@ pip install pandas scikit-learn matplotlib seaborn fastparquet
 * First, run `Crop_Data_Preprocessing.ipynb` to prepare the data.
 * Then, run `Crop_Prediction_Model.ipynb` to train the models and view the results.
 
+## The Team
+This project was built by **Group Kedah not Kedah** for the WIA1006 Machine Learning course.
+* Gnaw Yuan Zhen
+* Goh Sheng Fung
+* Joechele Lim Qiu Ying
+* Liew Wei Hong
+
+## Acknowledgments
+* **Course:** WIA1006 Machine Learning (University Malaya)
+* **Lecturer:** Dr. Woo Chaw Seng
+  
 ## License
 This project is licensed under the MIT License - see the `LICENSE` file for details.
